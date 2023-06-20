@@ -2,7 +2,7 @@
 
 ## 카카오톡 1:1 상담톡 기능
 ### Kakao.js
-- kakao api 사용
+- kakao channel api 사용
 
 ## 날씨 앱 기능
 ### Weather.js
