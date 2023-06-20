@@ -1,4 +1,4 @@
-# COM:ON 프로젝트 (https://www.com0n.com)
+# COM:ON 프로젝트 (http://com0n.com/)
 
 ## 카카오톡 1:1 상담톡 기능
 ### Kakao.js
