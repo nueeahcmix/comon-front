@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# COM:ON 프로젝트 (www.comOn.com)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 카카오톡 1:1 상담톡 기능
+### Kakao.js
+- kakao api 사용
 
-## Available Scripts
+## 날씨 앱 기능
+### Weather.js
+- openweathermap api 사용
 
-In the project directory, you can run:
+## 홈페이지 공지사항 게시판
 
-### `npm start`
+### 데이터베이스 통신
+- axios.get
+- axios.post
+- axios.put
+- axios.delete
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 글쓰기 권한 설정
+* 'useEffect' 훅을 사용하여 현재 사용자의 권한을 확인하고 그에 따라 'authYn' 상태 설정
+* sessionStorage.getItem('token')을 사용하여 세션 스토리지에서 토큰 추출
+* jwt-decode 라이브러리를 사용하여 디코드된 토큰에서 authIdx 값을 추출
+* authIdx 값과 비교하여 권한이 일치하는 경우에는 setAuthYn(true)를 호출하여 authYn 상태를 true로 설정. 권한이 일치하지 않는 경우에는 setAuthYn(false)를 호출하여 authYn 상태를 false로 설정
